@@ -1,7 +1,6 @@
 package item;
 
-/* TODO: Start your homework implementation here */
-public abstract class Item {
+public abstract class Item implements Tradable{
     public final String name;
 
     Item(String name) {
@@ -11,6 +10,10 @@ public abstract class Item {
     public abstract double price();
     public abstract int count();
     public abstract String prefix();
+
+    public double value() {
+        return this.price();
+    }
 
     @Override
     public String toString() {
