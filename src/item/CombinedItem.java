@@ -11,6 +11,7 @@ public class CombinedItem extends Item {
         this.components = components;
     }
 
+    @Override
     public double price() {
         double price = 0;
         for(Item item : components) {
@@ -19,6 +20,7 @@ public class CombinedItem extends Item {
         return price * COMBINATION_SURCHARGE;
     }
 
+    @Override
     public int count() {
         int nItems = 0;
         for(Item item : components) {
@@ -27,6 +29,7 @@ public class CombinedItem extends Item {
         return nItems;
     }
 
+    @Override
     public String prefix() {
         return "Combined";
     }

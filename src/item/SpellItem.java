@@ -3,8 +3,8 @@ package item;
 import static app.Helper.indentEachLine;
 
 public abstract class SpellItem extends Item {
-    private final Item inner;
-    private final String spellName;
+    protected final Item inner;
+    protected final String spellName;
 
     SpellItem(Item inner, String spellName, String newItemName) {
         super(newItemName);

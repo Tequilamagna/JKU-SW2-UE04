@@ -12,14 +12,17 @@ public class ItemGroup extends Item {
         this.amount = amount;
     }
 
+    @Override
     public double price() {
         return wrapped.price() * amount;
     }
 
+    @Override
     public int count() {
         return wrapped.count() * amount;
     }
 
+    @Override
     public String prefix() {
         return "Multi";
     }

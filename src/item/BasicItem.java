@@ -8,14 +8,17 @@ public class BasicItem extends Item{
         this.price = price;
     }
 
+    @Override
     public double price() {
         return this.price;
     }
 
+    @Override
     public int count() {
         return 1;
     }
 
+    @Override
     public String prefix() {
         return "Basic";
     }
