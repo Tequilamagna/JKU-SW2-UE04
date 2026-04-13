@@ -21,6 +21,10 @@ public class BasicItem extends Item{
     }
 
     public static BasicItem build(String name, double price) {
+        if(name == null || name.isBlank() || price < 0) {
+            return null;
+        }
+
         return new BasicItem(name, price);
     }
 }
