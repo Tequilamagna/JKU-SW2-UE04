@@ -12,11 +12,6 @@ public class NameSpell extends SpellItem {
     }
 
     @Override
-    public int count() {
-        return super.count();
-    }
-
-    @Override
     public String spellInfo() {
         return "(" + this.spellName + ")";
     }
