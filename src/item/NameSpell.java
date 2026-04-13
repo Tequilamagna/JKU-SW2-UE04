@@ -20,4 +20,12 @@ public class NameSpell extends SpellItem {
     public String spellInfo() {
         return "(" + this.spellName + ")";
     }
+
+    public static NameSpell cast(Item inner, String spellName, String adjective) {
+        if(inner == null || spellName == null || spellName.isBlank() || adjective == null || adjective.isBlank()){
+            return null;
+        }
+
+        return new NameSpell(inner, spellName, adjective);
+    }
 }
