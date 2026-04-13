@@ -20,7 +20,7 @@ public class Application {
     Item saruman = Items.enchant(whiteWizard, "corrupted by Sauron", "fallen");
     Item pipeWeed = Items.item("Pipe Weed", 10);
     Item drugDealing = Items.enchant(pipeWeed, "dealt", 600);
-    Item hobbit = Items.item("Wooden Horse", 200);
+    Item hobbit = Items.item("Hobbit", 200);
     Item suppressedHobbit = Items.enchant(hobbit, "intimidated", "suppressed");
     Item shireFolk = Items.item(suppressedHobbit,40000);
     Item men = Items.item("Man of Bree", 10);
