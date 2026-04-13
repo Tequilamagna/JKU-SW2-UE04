@@ -26,6 +26,6 @@ public abstract class SpellItem extends Item {
 
     @Override
     public String toString() {
-        return super.toString() + spellInfo() + "\n" + indentEachLine(inner.toString());
+        return super.toString() + " " + spellInfo() + "\n" + indentEachLine(inner.toString());
     }
 }

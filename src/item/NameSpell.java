@@ -3,7 +3,7 @@ package item;
 public class NameSpell extends SpellItem {
 
     private NameSpell(Item inner, String spellName, String adjective) {
-        super(inner, spellName, adjective + inner.name);
+        super(inner, spellName, "%s %s".formatted(adjective, inner.name));
     }
 
     @Override
