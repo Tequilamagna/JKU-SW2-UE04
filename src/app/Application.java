@@ -19,8 +19,9 @@ public class Application {
     Item whiteWizard = Items.enchant(wizard, "Level-up", "White");
     Item saruman = Items.enchant(whiteWizard, "corrupted by Sauron", "fallen");
     Item pipeWeed = Items.item("Pipe Weed", 10);
-    Item tradedWeed = Items.enchant(pipeWeed, "dealt", 20);
-    Item drugDealing = Items.item(tradedWeed, 500);
+    Item tradedWeed = Items.enchant(pipeWeed, "\"exported\"", "traded");
+    Item exportedWeed = Items.enchant(tradedWeed, "dealt", 20);
+    Item drugDealing = Items.item(exportedWeed, 500);
     Item hobbit = Items.item("Hobbit", 200);
     Item oppressedHobbit = Items.enchant(hobbit, "intimidated", "oppressed");
     Item shireFolk = Items.item(oppressedHobbit,400);
