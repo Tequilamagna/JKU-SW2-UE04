@@ -9,7 +9,7 @@ public class Application {
 
     Item uruk = Items.item("Uruk", 1);
     Item steel = Items.item("Steel", 0.5);
-    Item work = Items.item("work", 0.05);
+    Item work = Items.item("Work", 0.05);
     Item sword = Items.item("Sword", steel, work);
     Item shield = Items.item("Shield", steel, work);
     Item armour = Items.item("Armour", steel, work);
@@ -17,13 +17,13 @@ public class Application {
     Item army = Items.item(fightingUruk, 10000); //but my lord, there is no such force
     Item wizard = Items.item("Wizard", 1000);
     Item whiteWizard = Items.enchant(wizard, "Level-up", "White");
-    Item saruman = Items.enchant(whiteWizard, "corrupted by Sauron", "fallen");
+    Item saruman = Items.enchant(whiteWizard, "corrupted by Sauron", "Fallen");
     Item pipeWeed = Items.item("Pipe Weed", 10);
-    Item tradedWeed = Items.enchant(pipeWeed, "\"exported\"", "traded");
+    Item tradedWeed = Items.enchant(pipeWeed, "\"exported\"", "Traded");
     Item exportedWeed = Items.enchant(tradedWeed, "dealt", 20);
     Item drugDealing = Items.item(exportedWeed, 500);
     Item hobbit = Items.item("Hobbit", 200);
-    Item oppressedHobbit = Items.enchant(hobbit, "intimidated", "oppressed");
+    Item oppressedHobbit = Items.enchant(hobbit, "intimidated", "Oppressed");
     Item shireFolk = Items.item(oppressedHobbit,400);
     Item men = Items.item("Man of Bree", 10);
     Item thug = Items.enchant(men, "corrupted by Saruman", "Bad");
