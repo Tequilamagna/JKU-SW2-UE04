@@ -21,8 +21,8 @@ public class Application {
     Item pipeWeed = Items.item("Pipe Weed", 10);
     Item drugDealing = Items.enchant(pipeWeed, "dealt", 600);
     Item hobbit = Items.item("Hobbit", 200);
-    Item suppressedHobbit = Items.enchant(hobbit, "intimidated", "suppressed");
-    Item shireFolk = Items.item(suppressedHobbit,40000);
+    Item oppressedHobbit = Items.enchant(hobbit, "intimidated", "oppressed");
+    Item shireFolk = Items.item(oppressedHobbit,400);
     Item men = Items.item("Man of Bree", 10);
     Item thug = Items.enchant(men, "corrupted by Saruman", "Bad");
     Item thugs = Items.item(thug, 50);
