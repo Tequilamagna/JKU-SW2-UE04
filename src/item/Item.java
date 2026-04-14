@@ -3,7 +3,7 @@ package item;
 public abstract class Item implements Tradable{
     public final String name;
 
-    Item(String name) {
+    protected Item(String name) {
         this.name = name;
     }
 

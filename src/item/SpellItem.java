@@ -6,7 +6,7 @@ public abstract class SpellItem extends Item {
     protected final Item inner;
     protected final String spellName;
 
-    SpellItem(Item inner, String spellName, String newItemName) {
+    protected SpellItem(Item inner, String spellName, String newItemName) {
         super(newItemName);
         this.inner = inner;
         this.spellName = spellName;
