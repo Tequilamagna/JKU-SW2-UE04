@@ -7,7 +7,7 @@ public class ItemGroup extends Item {
     private final int amount;
 
     private ItemGroup(Item item, int amount) {
-        super("%d x %s".formatted(amount, item.toString()));
+        super("%d x %s".formatted(amount, item.name));
         this.wrapped = item;
         this.amount = amount;
     }
