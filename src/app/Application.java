@@ -13,7 +13,8 @@ public class Application {
     Item sword = Items.item("Sword", steel, work);
     Item shield = Items.item("Shield", steel, work);
     Item armour = Items.item("Armour", steel, work);
-    Item fightingUruk = Items.item("Fighting Uruk-Hai", uruk, sword, shield, armour);
+    Item test = null; // testing if CombinedItem.build filters out null Items
+    Item fightingUruk = Items.item("Fighting Uruk-Hai", uruk, sword, shield, armour, test);
     Item army = Items.item(fightingUruk, 10000); //but my lord, there is no such force
     Item wizard = Items.item("Wizard", 1000);
     Item whiteWizard = Items.enchant(wizard, "Level-up", "White");

@@ -50,6 +50,28 @@ public class CombinedItem extends Item {
             return null;
         }
 
-        return new CombinedItem(name, components);
+        int nValid = 0;
+        for(Item component : components) { //check for null entries
+            if (component == null) {
+                continue;
+            }
+            nValid++;
+        }
+
+        if(nValid == components.length) {
+            return new CombinedItem(name, components);
+        }
+
+        Item[] validComp = new Item[nValid];
+        int j = 0;
+        for (Item component : components) {
+            if (component == null) {
+                continue;
+            }
+            validComp[j] = component;
+            j++;
+        }
+
+        return new CombinedItem(name, validComp);
     }
 }
